@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: pink;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 600px;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid whitesmoke;
+        }
+        .hobbies {
+            margin-bottom: 10px;
+        }
+        .hobbies label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            text-align: center;
+        }
+        .submit-btn input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="email">E-mail id:</label>
+        <input type="email" id="email" name="email">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="contact">Contact#:</label>
+        <input type="text" id="contact" name="contact">
+
+        <h2>Educational Qualification</h2>
+        <label for="degree">Degree:</label>
+        <select id="degree" name="degree">
+            <option value="">-- Select Group --</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="engineering">Engineering:</label>
+        <select id="engineering" name="engineering">
+            <option value="">-- Select Group --</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <div class="hobbies">
+            <label>Hobbies:</label>
+            <input type="checkbox" id="chess" name="hobbies" value="chess">
+            <label for="chess">Playing chess</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading Books</label>
+        </div>
+
+        <h2>Address</h2>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <label for="resume">Attach Resume:</label>
+        <input type="file" id="resume" name="resume">
+
+        <div class="submit-btn">
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
+</body>
+</html>
